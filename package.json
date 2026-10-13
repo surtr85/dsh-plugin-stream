@@ -1,0 +1,45 @@
+{
+  "name": "dsh-plugin-stream",
+  "version": "1.0.0",
+  "description": "Smart heartbeat & live progress streaming plugin for DeepSeek Harness (DSH)",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "cordis",
+    "stream",
+    "progress",
+    "agent-loop"
+  ],
+  "homepage": "https://github.com/surtr85/dsh-plugin-stream#readme",
+  "bugs": {
+    "url": "https://github.com/surtr85/dsh-plugin-stream/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surtr85/dsh-plugin-stream.git"
+  },
+  "license": "MIT",
+  "author": "Sajjad <surtr85>",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "engines": {
+      "dsh": ">=0.1.7"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.0",
+    "@deepseek-ai/dsh-tools": ">=0.1.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}
