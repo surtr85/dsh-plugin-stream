@@ -60,7 +60,8 @@ export function apply(ctx, options = {}) {
     sections.push({
       id: "dsh-plugin-stream-rules",
       title: "Live Streaming & Progress Protocol",
-      content: config.systemInstruction,
+      text: config.systemInstruction,
+      interpolate: false,
       priority: 100,
     });
 
