@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-stream",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Smart heartbeat & live progress streaming plugin for DeepSeek Harness (DSH)",
   "keywords": [
     "dsh",
